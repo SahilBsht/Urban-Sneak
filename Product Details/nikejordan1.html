@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> all products - | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Product images/Logo.png" width="100px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products.html">Products</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="/account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="/cart.html"><img src="Product images/CART1.png" width="30px" height="30px"></a>
+            <img src="Product images/icons8-menu-30.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+    <!-------single product----------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="Product images/nike jordan 1/13159116_21517224_1000.webp"
+                    width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="Product images/nike jordan 1/13159116_21517226_1000.webp"
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Product images/nike jordan 1/13159116_21517228_1000.webp"
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Product images/nike jordan 1/13159116_21517230_1000.webp"
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Product images/nike jordan 1/13159116_21517232_1000.webp"
+                            width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / AIR JORDAN I
+                    TRACK RED</p>
+                <h1>AIR JORDAN I
+                    TRACK RED</h1>
+                <h4>₹ 94 358.00</h4>
+                <select>
+                    <option>SELECT SIZE</option>
+                    <option>UK 5</option>
+                    <option>UK 6</option>
+                    <option>UK 7</option>
+                    <option>UK 8</option>
+                    <option>UK 9</option>
+                    <option>UK 10</option>
+                    <option>UK 11</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+
+                <h3>Product Details</h3>
+                <p>The post-season saw a few impressive teams during the Michael Jordan era. Houston and Detroit both
+                    won two championships, and L.A. won three. But, as usual, MJ was at the top of the pack, clinching
+                    six for Chicago in just seven seasons of play. This Air Jordan I celebrates that incredible run—a
+                    time when MJ ran the league.</p>
+            </div>
+        </div>
+    </div>
+    <!-------footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile Phone</p>
+                    <div class="app-logo">
+                        <img src="Product images/pngwing.com (1).png">
+
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="" alt="">
+                    <p>Download App for Android and Ios mobile Phone</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Easy Tutorials</p>
+        </div>
+    </div>
+    <!----js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <!-------- Js for product gallery-->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+</body>
+
+</html>
